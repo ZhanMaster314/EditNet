@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import {styles} from './styles';
 
 
-export default function LogIn() {
+export default function LogInScreen() {
   return (
     <View style={styles.container}>
       <Text>LogIn</Text>
