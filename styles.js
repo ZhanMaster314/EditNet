@@ -1,4 +1,6 @@
 import { StyleSheet, Dimensions} from 'react-native';
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
+
 
 export const styles = StyleSheet.create({
   container: {
@@ -6,6 +8,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection:'column'
   },
   buttonContainerbuttonContainer: {
     width: 320,
@@ -16,19 +19,28 @@ export const styles = StyleSheet.create({
     padding: 3,
   },
   button: {
-    borderRadius: 10,
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
-    backgroundColor: 'blue'
+    borderRadius: 5,
+    padding:15,
+    backgroundColor:'#6849a7',
+    marginTop:10
+
   },
   buttonLabel: {
-    color: 'white',
+    color: '#f2f2f2',
     fontSize: 16,
   },
   welcomeText:{
+    textAlign: 'center',
     color: 'blue',
     fontSize: 50,
+  },
+  title:{
+    textAlign: 'center',
+    fontSize:18,
+  },
+  reelsImage:{
+    height: SCREEN_HEIGHT*0.45,
+    backgroundColor:'black'
+
   }
 });
