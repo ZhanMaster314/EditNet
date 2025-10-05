@@ -12,9 +12,7 @@ export default function HomePageScreen({ navigation }) {
     
   return (
     <SafeAreaView style={styles.container}>
-        <Image
-                            source='https://reactnative.dev/img/tiny_logo.png'
-                        />
+          
       <Text style={styles.title}>UserName</Text>
         <Ionicons name="checkmark-circle" size={32} color="green" />
 

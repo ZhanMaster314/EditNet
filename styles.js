@@ -39,8 +39,10 @@ export const styles = StyleSheet.create({
     fontSize:18,
   },
   reelsImage:{
+     width: SCREEN_HEIGHT*0.45, 
     height: SCREEN_HEIGHT*0.45,
-    backgroundColor:'black'
+    backgroundColor:'#F5F5F0',
+    marginTop:10
 
   }
 });

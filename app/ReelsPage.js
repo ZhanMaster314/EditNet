@@ -34,14 +34,14 @@ export default function ReelsPageScreen({ navigation }) {
       <FlatList
         data={allMedia}
         renderItem={({item,index}) => {
-            console.log("in flat list item is", item)
             return(
                 <View style={[{
                     backgroundColor:"black",
 
                 }]}>
-                <Image
-                    source='https://reactnative.dev/img/tiny_logo.png'
+                <Image 
+                source={{ uri: item }}
+                style={styles.reelsImage}
                 />
                 
                 </View>
